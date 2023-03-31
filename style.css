@@ -148,6 +148,7 @@ main {
   place-items: center;
 }
 
+/* NAVIGATION */
 .nav {
   /* background-color: yellow; */
   padding: 0.9rem 0;
@@ -279,7 +280,7 @@ header {
 .aside {
   text-align: center;
   margin-top: 5rem;
-  padding: 5rem 0 3rem;
+  padding: 6rem 0 3rem;
 }
 
 .aside-text {
@@ -354,6 +355,9 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
+  .features {
+    padding-bottom: 0;
+  }
   .feature-center {
     flex-direction: row;
   }
@@ -364,6 +368,7 @@ header {
 
   .feature-info {
     border-bottom: 0.5px solid rgba(69, 88, 128, 20%);
+    column-gap: 0;
   }
 
   .feature-info:last-child {
@@ -395,4 +400,24 @@ header {
 
 .deep-pink-bg {
   background: #f8aec3;
+}
+
+/* design */
+.design {
+  text-align: center;
+  background: #fff9ea;
+  padding-bottom: 0;
+}
+
+.design p {
+  max-width: 18rem;
+  margin: 2rem auto 3rem;
+}
+
+.design-btn {
+  padding: 0.8rem 2.5rem;
+}
+
+.design-img {
+  margin-top: 3rem;
 }
