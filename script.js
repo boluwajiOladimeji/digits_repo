@@ -94,3 +94,27 @@ topLink.addEventListener('click', (e) => {
     behavior: 'smooth',
   });
 });
+
+// Contact Us Modal
+const overlay = document.querySelector('.overlay');
+const modal = document.querySelector('.modal');
+document.querySelectorAll('.contact-us').forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    overlay.classList.remove('hidden');
+    modal.classList.remove('hidden');
+  });
+});
+
+document.querySelector('.close-modal').addEventListener('click', (e) => {
+  overlay.classList.add('hidden');
+  modal.classList.add('hidden');
+});
+
+window.addEventListener('keydown', (e) => {
+  if (modal.classList.contains('hidden')) return;
+  if (e.key === 'Escape') {
+    overlay.classList.add('hidden');
+    modal.classList.add('hidden');
+  }
+});

@@ -1,5 +1,5 @@
 /*
-=============== 
+===============
 Fonts
 ===============
 */
@@ -8,7 +8,7 @@ Fonts
 @import url(//db.onlinewebfonts.com/c/89248b0583721153668df86453b579de?family=Halyard+Text);
 
 /*
-=============== 
+===============
 Variables
 ===============
 */
@@ -17,12 +17,8 @@ Variables
   --clr-primary: #1e266d;
   --clr-primary-light: #455880;
 
- 
   --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
+
   --clr-black: #222;
   --ff-primary: 'Halyard Text', sans-serif;
   --ff-secondary: 'Halyard Display', sans-serif;
@@ -35,7 +31,7 @@ Variables
   --fixed-width: 620px;
 }
 /*
-=============== 
+===============
 Global Styles
 ===============
 */
@@ -596,7 +592,7 @@ footer a {
   transition: var(--transition);
   max-width: 450px;
   box-shadow: 5px 0 15px rgba(255, 255, 255, 0.1);
-  z-index:1000
+  z-index: 1000;
 }
 
 .show {
@@ -666,4 +662,42 @@ footer a {
   100% {
     transform: scale(1);
   }
+}
+
+/* Modal */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99999;
+  backdrop-filter: blur(5px);
+  transition: var(--transition);
+  opacity: 1;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80rem;
+  background-color: #f3f3f3;
+  padding: 3rem 2rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 100000;
+  transition: var(--transition);
+  opacity: 1;
+}
+
+.close-modal {
+  padding-top: 0;
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
