@@ -599,7 +599,8 @@ footer a {
   transform: translateX(0);
 }
 
-.close-sidebar {
+.close-sidebar,
+.close-modal {
   display: block;
   padding: 1rem;
   margin-left: auto;
