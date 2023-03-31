@@ -1,5 +1,5 @@
 /*
-=============== 
+===============
 Fonts
 ===============
 */
@@ -8,7 +8,7 @@ Fonts
 @import url(//db.onlinewebfonts.com/c/89248b0583721153668df86453b579de?family=Halyard+Text);
 
 /*
-=============== 
+===============
 Variables
 ===============
 */
@@ -46,7 +46,7 @@ Variables
   --fixed-width: 620px;
 }
 /*
-=============== 
+===============
 Global Styles
 ===============
 */
@@ -368,7 +368,7 @@ header {
 
   .feature-info {
     border-bottom: 0.5px solid rgba(69, 88, 128, 20%);
-    column-gap: 0;
+    column-gap: 1rem;
   }
 
   .feature-info:last-child {
