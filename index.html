@@ -19,22 +19,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Digit</title>
   </head>
   <body>
-    <nav class="nav">
+    <nav class="nav" id="home">
       <div class="nav-center">
         <div class="logo-container">
           <h2 class="nav-logo">digits<span>:</span></h2>
-          <i class="nav-icon fa-solid fa-bars"></i>
+          <i class="nav-icon fa-solid fa-bars open-sidebar"></i>
         </div>
 
         <div class="navigation">
           <ul class="nav-links">
-            <li><a class="nav-link" href="#">homepages</a></li>
-            <li><a class="nav-link" href="#">products</a></li>
-            <li><a class="nav-link" href="#">company</a></li>
-            <li><a class="nav-link" href="#">pricing</a></li>
+            <li><a class="nav-link" href="#features">features</a></li>
+            <li><a class="nav-link" href="#products">products</a></li>
+            <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
             <li><a class="nav-link" href="#">blog</a></li>
           </ul>
           <ul class="nav-infos">
@@ -83,7 +83,7 @@
       </div>
     </aside>
     <!-- Features -->
-    <section class="section features">
+    <section class="section features" id="features">
       <div class="feature-title">
         <h2>
           Whatever work you do,<br />
@@ -130,7 +130,8 @@
         </div>
       </div>
     </section>
-    <section class="section design">
+    <!-- Products -->
+    <section class="section design" id="products">
       <article class="design-text">
         <h2 class="design-title">Simplicity meets innovative design</h2>
         <p class="design-text">
@@ -144,7 +145,9 @@
         <img src="./img/design-img.png" alt="design-img" class="design-img" />
       </article>
     </section>
-    <section class="section testimonials">
+
+    <!-- TESTIMONAIL -->
+    <section class="section testimonials" id="testimonials">
       <h2 class="testimonial-title">What others are saying</h2>
 
       <div class="section-center testimonial-center">
@@ -197,7 +200,7 @@
         </article>
       </div>
     </section>
-    <section class="section form">
+    <section class="section form" id="contact">
       <div class="section-center form-center">
         <h2>
           Ready to launch <br />
@@ -211,6 +214,7 @@
         </article>
       </div>
     </section>
+    <!-- footer -->
     <footer class="footer section">
       <div class="section-center">
         <div class="footer-info-container">
@@ -262,7 +266,7 @@
           </ul>
         </div>
         <div class="footer-floor">
-          <p>Copyright &copy 2023 tempty club</p>
+          <p>Copyright &copy <span class="date"></span> tempty club</p>
           <ul>
             <li>Privacy Policy</li>
             <li>Terms of Use</li>
@@ -271,5 +275,25 @@
         </div>
       </div>
     </footer>
+
+    <!-- sidebar -->
+    <div class="sidebar">
+      <button class="close-sidebar sidebar-icon">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="sidebar-navigation">
+        <ul class="side-links">
+          <li><a class="side-link" href="#features">features</a></li>
+          <li><a class="side-link" href="#products">products</a></li>
+          <li><a class="side-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="side-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <a class="scroll-link top-link" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- script -->
+    <script src="./script.js"></script>
   </body>
 </html>
