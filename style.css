@@ -91,7 +91,7 @@ h4 {
   color: var(--clr-primary);
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 h2 {
   font-size: 2rem;
@@ -108,7 +108,7 @@ p {
 }
 @media screen and (min-width: 800px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   h2 {
     font-size: 2rem;
@@ -262,7 +262,7 @@ header {
   min-height: 100vh;
   position: relative;
   background: linear-gradient(hwb(208 94% 0% / 0.12), hsla(208, 100%, 97%, 1));
-  padding: 8rem 0;
+  padding: 8rem 0 0;
 }
 
 .header-info {
