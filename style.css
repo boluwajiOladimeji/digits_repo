@@ -260,7 +260,6 @@ nav a {
 header {
   text-align: center;
   min-height: 100vh;
-  padding: 4rem 0 0;
   position: relative;
   background: linear-gradient(
     hsla(208, 100%, 97%, 0.12),
@@ -272,7 +271,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
-  padding-top: 7rem;
+  padding-top: 12rem;
 }
 
 .header-btns {
