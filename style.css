@@ -1,5 +1,5 @@
 /*
-===============
+=============== 
 Fonts
 ===============
 */
@@ -8,7 +8,7 @@ Fonts
 @import url(//db.onlinewebfonts.com/c/89248b0583721153668df86453b579de?family=Halyard+Text);
 
 /*
-===============
+=============== 
 Variables
 ===============
 */
@@ -17,8 +17,23 @@ Variables
   --clr-primary: #1e266d;
   --clr-primary-light: #455880;
 
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
-
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
   --ff-primary: 'Halyard Text', sans-serif;
   --ff-secondary: 'Halyard Display', sans-serif;
@@ -31,7 +46,7 @@ Variables
   --fixed-width: 620px;
 }
 /*
-===============
+=============== 
 Global Styles
 ===============
 */
@@ -245,7 +260,7 @@ nav a {
 header {
   text-align: center;
   min-height: calc(100vh);
-  padding: 5rem 0;
+  padding: 8rem 0 0;
   position: relative;
   background: linear-gradient(
     hsla(208, 100%, 97%, 0.12),
@@ -276,7 +291,8 @@ header {
   max-width: 719px;
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
+  bottom: 0;
+  transform: translate(-50%, 30%);
 }
 
 /* aside Logos */
