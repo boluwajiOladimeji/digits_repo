@@ -1,5 +1,5 @@
 /*
-===============
+=============== 
 Fonts
 ===============
 */
@@ -8,7 +8,7 @@ Fonts
 @import url(//db.onlinewebfonts.com/c/89248b0583721153668df86453b579de?family=Halyard+Text);
 
 /*
-===============
+=============== 
 Variables
 ===============
 */
@@ -46,7 +46,7 @@ Variables
   --fixed-width: 620px;
 }
 /*
-===============
+=============== 
 Global Styles
 ===============
 */
@@ -259,23 +259,25 @@ nav a {
 /* header */
 header {
   text-align: center;
-  min-height: 120vh;
-  position: relative;
-  background: linear-gradient(hwb(208 94% 0% / 0.12), hsla(208, 100%, 97%, 1));
+  min-height: calc(100vh);
   padding: 8rem 0 0;
+  position: relative;
+  background: linear-gradient(
+    hsla(208, 100%, 97%, 0.12),
+    hsla(208, 100%, 97%, 1)
+  );
 }
 
 .header-info {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
-  /* margin-bottom: 6rem; */
 }
 
 .header-btns {
   display: flex;
   justify-content: center;
-  column-gap: 1rem;
+  gap: 1rem;
 }
 
 .header-btn {
@@ -285,21 +287,20 @@ header {
 
 .header-img-container {
   width: 90%;
-  margin: 4rem auto 0;
-  max-width: 740px;
+  margin: 2rem auto 0;
+  max-width: 719px;
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%, 25%);
-  /* background: blue; */
+  transform: translate(-50%, 30%);
 }
 
 /* aside Logos */
 
 .aside {
   text-align: center;
-  margin-top: 3rem;
-  padding: 5rem 0 0;
+  margin-top: 5rem;
+  padding: 6rem 0 3rem;
 }
 
 .aside-text {
