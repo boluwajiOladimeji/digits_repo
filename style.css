@@ -260,7 +260,7 @@ nav a {
 header {
   text-align: center;
   min-height: 54rem;
-  padding: 8rem 0 0;
+  padding: 9rem 0 0;
   position: relative;
   background: linear-gradient(
     hsla(208, 100%, 97%, 0.12),
@@ -333,6 +333,9 @@ header {
 }
 
 /* section */
+
+/* features */
+
 .feature-title {
   text-align: center;
   margin-bottom: 5rem;
@@ -342,6 +345,7 @@ header {
   display: flex;
   justify-content: space-between;
   gap: 15%;
+  padding-bottom: 0;
 }
 
 .feature-img {
