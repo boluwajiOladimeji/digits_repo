@@ -39,9 +39,7 @@ window.addEventListener('scroll', (e) => {
 const navLinks = document.querySelector('.nav-links');
 console.log(navLinks);
 
-navLinks.addEventListener('click', (e) => {
-  e.preventDefault();
-  const id = e.target.getAttribute('href');
+function scrollToView(id) {
   if (id.length <= 1) return;
   const element = document.querySelector(id);
   const fixedNav = nav.classList.contains('sticky');
@@ -50,71 +48,59 @@ navLinks.addEventListener('click', (e) => {
   if (!fixedNav) {
     position = position - navHeight;
   }
+  if (sidebar.classList.contains('show')) sidebar.classList.remove('show');
   window.scrollTo({
     left: 0,
     top: position,
     behavior: 'smooth',
   });
+}
+
+navLinks.addEventListener('click', (e) => {
+  e.preventDefault();
+  const id = e.target.getAttribute('href');
+  scrollToView(id);
 });
 
 const sideLinks = document.querySelector('.side-links');
 sideLinks.addEventListener('click', (e) => {
   e.preventDefault();
   const id = e.target.getAttribute('href');
-  if (id.length <= 1) return;
-  const element = document.querySelector(id);
-  const fixedNav = nav.classList.contains('sticky');
-  const navHeight = nav.getBoundingClientRect().height;
-  let position = element.offsetTop - navHeight;
-  if (!fixedNav) {
-    position = position - navHeight;
-  }
-  sidebar.classList.remove('show');
-  window.scrollTo({
-    left: 0,
-    top: position,
-    behavior: 'smooth',
-  });
+  scrollToView(id);
 });
 
 topLink.addEventListener('click', (e) => {
   e.preventDefault();
   const id = e.currentTarget.getAttribute('href');
-  const element = document.querySelector(id);
-  const fixedNav = nav.classList.contains('sticky');
-  const navHeight = nav.getBoundingClientRect().height;
-  let position = element.offsetTop - navHeight;
-  if (!fixedNav) {
-    position = position - navHeight;
-  }
-  sidebar.classList.remove('show');
-  window.scrollTo({
-    left: 0,
-    top: position,
-    behavior: 'smooth',
-  });
+  scrollToView(id);
 });
 
 // Contact Us Modal
 const overlay = document.querySelector('.overlay');
 const modal = document.querySelector('.modal');
+
+const addModal = () => {
+  overlay.classList.remove('hidden');
+  modal.classList.remove('hidden');
+};
+
+const removeModal = () => {
+  overlay.classList.add('hidden');
+  modal.classList.add('hidden');
+};
+
 document.querySelectorAll('.contact-us').forEach((btn) => {
   btn.addEventListener('click', (e) => {
     e.preventDefault();
-    overlay.classList.remove('hidden');
-    modal.classList.remove('hidden');
+    addModal();
   });
 });
 
-document.querySelector('.close-modal').addEventListener('click', (e) => {
-  overlay.classList.add('hidden');
-  modal.classList.add('hidden');
-});
+document.querySelector('.close-modal').addEventListener('click', removeModal);
 
 window.addEventListener('keydown', (e) => {
   if (modal.classList.contains('hidden')) return;
   if (e.key === 'Escape') {
-    overlay.classList.add('hidden');
-    modal.classList.add('hidden');
+    removeModal();
   }
 });
