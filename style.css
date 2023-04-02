@@ -259,8 +259,7 @@ nav a {
 /* header */
 header {
   text-align: center;
-  min-height: 54rem;
-  padding: 9rem 0 0;
+  padding: 9rem 0 2rem;
   position: relative;
   background: linear-gradient(
     hsla(208, 100%, 97%, 0.12),
@@ -289,18 +288,14 @@ header {
   width: 90%;
   margin: 0 auto;
   max-width: 61.06rem;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 25%);
 }
 
 /* aside Logos */
 
 .aside {
   text-align: center;
-  margin-top: 5rem;
-  padding: 6rem 0 3rem;
+  margin-top: 2rem;
+  padding: 3rem 0;
 }
 
 .aside-text {
@@ -330,6 +325,25 @@ header {
 .aside-logo {
   /* object-fit: cover; */
   height: 2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    background: blue;
+    min-height: 54rem;
+  }
+
+  .header-img-container {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 25%);
+  }
+
+  .aside {
+    margin-top: 5rem;
+    padding: 6rem 0 3rem;
+  }
 }
 
 /* section */
