@@ -262,14 +262,14 @@ header {
   min-height: 100vh;
   position: relative;
   background: linear-gradient(hwb(208 94% 0% / 0.12), hsla(208, 100%, 97%, 1));
-  padding: 8rem 0 0;
+  padding: 4rem 0 0;
 }
 
 .header-info {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
-  margin-bottom: 6rem;
+  /* margin-bottom: 6rem; */
 }
 
 .header-btns {
