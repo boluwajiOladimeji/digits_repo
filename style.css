@@ -272,6 +272,7 @@ header {
   flex-direction: column;
   gap: 0.9rem;
   padding: 8rem 0 4rem;
+  margin-bottom: 4rem;
 }
 
 .header-btns {
@@ -288,7 +289,7 @@ header {
 .header-img-container {
   width: 90%;
   margin: 4rem auto 0;
-  max-width: 800px;
+  max-width: 740px;
   position: absolute;
   left: 50%;
   bottom: 0;
