@@ -259,10 +259,10 @@ nav a {
 /* header */
 header {
   text-align: center;
-  min-height: 100vh;
+  min-height: 130vh;
   position: relative;
   background: linear-gradient(hwb(208 94% 0% / 0.12), hsla(208, 100%, 97%, 1));
-  padding: 4rem 0 0;
+  padding: 8rem 0 0;
 }
 
 .header-info {
