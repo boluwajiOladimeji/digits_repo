@@ -271,7 +271,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
-  padding-top: 8rem;
+  padding: 8rem 0 4rem;
 }
 
 .header-btns {
