@@ -288,12 +288,12 @@ header {
 
 .header-img-container {
   width: 90%;
-  margin: 0 auto 4rem;
+  margin: 4rem auto 0;
   max-width: 719px;
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%, 40%);
+  transform: translate(-50%, 30%);
   /* background: blue; */
 }
 
