@@ -1,5 +1,5 @@
 /*
-=============== 
+===============
 Fonts
 ===============
 */
@@ -8,7 +8,7 @@ Fonts
 @import url(//db.onlinewebfonts.com/c/89248b0583721153668df86453b579de?family=Halyard+Text);
 
 /*
-=============== 
+===============
 Variables
 ===============
 */
@@ -46,7 +46,7 @@ Variables
   --fixed-width: 620px;
 }
 /*
-=============== 
+===============
 Global Styles
 ===============
 */
@@ -259,7 +259,7 @@ nav a {
 /* header */
 header {
   text-align: center;
-  min-height: calc(100vh);
+  min-height: 54rem;
   padding: 8rem 0 0;
   position: relative;
   background: linear-gradient(
@@ -287,12 +287,12 @@ header {
 
 .header-img-container {
   width: 90%;
-  margin: 2rem auto 0;
-  max-width: 719px;
+  margin: 0 auto;
+  max-width: 61.06rem;
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%, 30%);
+  transform: translate(-50%, 25%);
 }
 
 /* aside Logos */
